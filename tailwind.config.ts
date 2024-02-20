@@ -7,11 +7,19 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    
     extend: {
+      fontSize: {
+        primary: ['16.672px','25.008px']
+      },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'cat' : "url('./background.jpg)",
+      },
+      fontFamily: {
+        poppins: ['var(--font-inter)'],
+        mono: ['var(--font-roboto-mono)']      },
+      colors: {
+        "blue" : "rgba(19, 162, 169)", 
       },
     },
   },
